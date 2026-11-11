@@ -6,7 +6,13 @@ Module 5 only (LU 5.1, 5.2, 5.4). Local, free, no cloud account or credentials.
 
 ## Before 30-minute timer
 
-Fork https://github.com/kalviumcommunity/service-signal-repair and clone your fork. Python 3.9+ standard library, terminal, editor and PDF/screenshot tool must already work. No package install. Run commands from repository root. Report unrelated environment failures to instructor and pause timer. Q3 binds ephemeral localhost ports and terminates only processes it creates. Windows may use `python` instead of `python3`.
+Fork https://github.com/kalviumcommunity/service-signal-repair and clone your fork. Python 3.9+ standard library, terminal, editor and PDF/screenshot tool must already work. No package install. Run commands from repository root. Resolve unrelated environment failures before starting timer. These checks evaluate local samples; no listening services required. Windows may use `python` instead of `python3`.
+
+Before timing, verify standard-library tooling without running repairs:
+
+```bash
+python3 -c 'import sys,json,pathlib; assert sys.version_info >= (3,9); print("PREFLIGHT OK")'
+```
 
 ## Application/evidence contract
 
@@ -40,4 +46,4 @@ Each task is one fault/incomplete-analysis group, not necessarily one bad line. 
 
 One PDF, three labelled task sections, fork URL as text, readable real command output and corrected diff/file, requested 3–5-line analysis (PDF text or editor screenshot). Show failing configuration output before repair and passing output after for code/config tasks; written tasks show supplied source evidence and corrected analysis. Minimum one real screenshot per task; combine related evidence if readable or use extra screenshots. No PR/video/ZIP required. Commit corrections to your own fork; evaluator grades PDF, not private account access. Suggested 5 minutes diagnosis, 18 minutes repair/analysis, 7 minutes verification/PDF. Never fabricate results or include secrets. Checker success does not replace written reasoning or screenshot proof.
 
-Protected sources are starter implementation of previously taught operations concepts, not new Python algorithms students must implement. Do not distribute instructor reference solutions with this repo.
+Protected sources are starter implementation of previously taught operations concepts, not new Python algorithms students must implement. Keep worked solutions outside this broken starter.
